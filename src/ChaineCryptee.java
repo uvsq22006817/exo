@@ -1,7 +1,7 @@
 public class ChaineCryptee {
     private String enchiffre;
     private int decalage;
-    private ChaineCryptee (String enchiffre, int decalage) {
+    public ChaineCryptee (String enchiffre, int decalage) {
         this.enchiffre=enchiffre;
         this.decalage=decalage;
     }
@@ -40,6 +40,7 @@ public static ChaineCryptee deCryptee(String s, int decalage) {
         return c;
 
     }
+    //le constructeur depuis le debut je l'ai crée privé mais j'ai fais des test
 
 }
 
