@@ -5,4 +5,10 @@ public class ChaineCryptee {
         this.enchiffre=enchiffre;
         this.decalage=decalage;
     }
+    public String decrypte() {
+
+
+        String s="";
+        return s;
+    }
 }
