@@ -28,6 +28,18 @@ public class ChaineCryptee {
 public static ChaineCryptee deCryptee(String s, int decalage) {
     return new ChaineCryptee(s,decalage);
 }
+    public static ChaineCryptee deEnClair(String s, int decalage) {
+        if(s==null) return null;
+        String str="";
+        int i;
+        for(i=0;i<s.length();i++) {
+            str+=(ChaineCryptee.decaleCaractere(s.charAt(i),-decalage));
+        }
+
+        ChaineCryptee c=new ChaineCryptee(str,decalage);
+        return c;
+
+    }
 
 }
 
